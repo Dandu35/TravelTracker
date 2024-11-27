@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkblue">#0069c0</color>
+    <color name="blue">#137fd9</color>
+    <color name="lightblue">#2196f3</color>
+    <color name="gray">#5e6266</color>
+    <color name="lightgray">#929292</color>
+    <color name="darkred">#D60000</color>
+    <color name="selectedItemBackground">#2196f3</color>
+    <color name="visitado">#317E00</color>
+    <color name="confirmado">#FFB947</color>
+    <color name="backGroundBright">#DAE6EF</color>
+    <color name="amarillo">#FFB947</color>
+    <color name="verde">#317E00</color>
+    <color name="colorOferta">#B4AAAAAA</color>
+    <color name="transparente">#00AAAAAA</color>
+    <color name="colorRecyclerViewPais">#DDFFFFFF</color>
+    <color name="fondoMapa">#D0254E63</color>
+    <color name="azulPerfil">#7E39A8FF</color>
+</resources>

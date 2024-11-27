@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_perfil_scene"
+    android:background="@drawable/tren2"
+    tools:context=".PerfilFragment">
+
+    <TextView android:id="@+id/textoVisitados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Color de los países visitados."
+        android:textSize="25dp"
+        android:layout_above="@id/colorPickerView"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/white"
+        />
+    <TextView android:id="@+id/textoVisitando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Color del país que estás visitando."
+        android:textSize="25dp"
+        android:layout_above="@id/colorPickerView"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/white"
+        />
+
+    <TextView android:id="@+id/textoVerificados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Color de los países que has visitado y verificado."
+        android:textSize="25dp"
+        android:layout_above="@id/colorPickerView"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <com.skydoves.colorpickerview.ColorPickerView
+        android:id="@+id/colorPickerView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colorPickerView"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="@color/lightblue"
+        android:text="@string/txtAceptar"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutArriba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/fondo_perfil"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icono_perfil" />
+
+        <TextView
+            android:id="@+id/nombreUsuario"
+            android:layout_width="250dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/nombre_usuario"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Cerrar_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/darkred"
+        android:gravity="center"
+        android:text="@string/cerrar_sesion"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutArriba"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorOferta">
+
+        <!-- Añadir los elementos TextView y Button dentro del RelativeLayout -->
+
+        <TextView
+            android:id="@+id/txtOpcionesColoresMapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opciones"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="25dp"
+            android:shadowColor="#000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1.6" />
+
+        <TextView
+            android:layout_toLeftOf="@id/btnSeleccionarColorPaisesVisitados"
+            android:id="@+id/txtOpcionesPaisesVisitados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PaisesVisitadosText"
+            android:textSize="20dp"
+            android:layout_below="@id/txtOpcionesColoresMapa"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="30dp"
+            android:shadowColor="#000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1.6" />
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/txtVisitando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Visitando"
+            android:textSize="20dp"
+            android:layout_below="@id/txtOpcionesPaisesVisitados"
+            android:layout_marginTop="18.5dp"
+            android:layout_marginLeft="50dp"
+            android:shadowColor="#000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1.6" />
+
+        <TextView
+            android:layout_marginRight="30dp"
+            android:id="@+id/txtVerificado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Verificado"
+            android:textSize="20dp"
+            android:layout_below="@id/txtVisitando"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="50dp"
+            android:shadowColor="#000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1.6" />
+
+        <Button
+            android:id="@+id/btnSeleccionarColorPaisesVisitados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtOpcionesColoresMapa"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:text="@string/txtBtnSeleccionarColorVisitados"
+            android:backgroundTint="@color/lightblue"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnSeleccionarColorPaisesVisitando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSeleccionarColorPaisesVisitados"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:text="@string/txtBtnSeleccionarColorVisitados"
+            android:backgroundTint="@color/lightblue"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnPaisesVerificados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSeleccionarColorPaisesVisitando"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/txtBtnSeleccionarColorVisitados"
+            android:backgroundTint="@color/lightblue"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>
